@@ -1,15 +1,11 @@
 import { defineConfig } from 'vite';
 import autoprefixer from 'autoprefixer';
 import vue from '@vitejs/plugin-vue';
-import legacy from '@vitejs/plugin-legacy';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/teslasico/',
-  plugins: [
-    vue(),
-    legacy({ target: ['defaults', 'not IE 11'] })
-  ],
+  plugins: [vue()],
   resolve: {
     alias: {
       '@': '/src'
@@ -17,7 +13,6 @@ export default defineConfig({
   },
   build: {
     assetsInlineLimit: 0,
-    outDir: 'docs',
     rollupOptions: {
       output: {
         entryFileNames: 'assets/main.js',
