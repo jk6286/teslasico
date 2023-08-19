@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/teslasico/',
+  // base: '/teslasico/',
   plugins: [vue()],
   resolve: {
     alias: {
