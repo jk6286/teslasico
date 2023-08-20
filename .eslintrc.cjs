@@ -31,4 +31,4 @@ module.exports = {
       multiline: 'never' // 태그가 멀티 라인일 경우 닫는 부호 > 를 다음 라인으로 내릴 것인지
     }]
   }
-};
+}

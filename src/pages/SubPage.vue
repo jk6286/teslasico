@@ -1,7 +1,5 @@
 <template>
-  <h2 class="tit_sub">
-    Sub Page
-  </h2>
+  <h2 class="tit_sub">Sub Page</h2>
 </template>
 
 <style>
