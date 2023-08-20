@@ -1,0 +1,9 @@
+@import './utility';
+
+.test {
+  display: flex;
+  width: 173px;
+  height: 150px;
+  background: url(@/assets/img/logo.svg) 50% 50% no-repeat;
+  background-size: cover;
+}

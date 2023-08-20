@@ -4,7 +4,6 @@ import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: '/teslasico/',
   plugins: [vue()],
   resolve: {
     alias: {
@@ -37,7 +36,7 @@ export default defineConfig({
     },
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "./src/assets/scss/utility.scss";', // utility.scss 파일을 전역으로 import
+        additionalData: '@import "./src/assets/scss/utility";', // utility.scss 파일을 전역으로 import
       },
     },
   },
