@@ -15,9 +15,6 @@ const store = useChartDataStore();
       테슬라 연도별 생산 및 배송<span>Tesla's Production and Delivery by year</span>
     </h2>
     <BarChart :data="store.연도별_생산배송_차트데이터" />
-    <img
-      src="/logo.svg"
-      alt="">
   </div>
 </template>
 
