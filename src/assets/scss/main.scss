@@ -14,8 +14,8 @@ body{background:#fff;-webkit-text-size-adjust:none}
 input:checked[type='checkbox']{background-color:#666;-webkit-appearance:checkbox}
 input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
 input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
-body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;color:#333}
-a{color:#333;text-decoration:none}
+body,th,td,input,select,textarea,button{font-size:12px;line-height:1.5;font-family:'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;color:#2c3e50}
+a{color:inherit;text-decoration:none}
 a:active, a:hover{text-decoration:none}
 a:active{background-color:transparent}
 address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
@@ -30,3 +30,106 @@ main{display:block}
 .show{display:block}
 .hide{display:none}
 
+// layout
+html, body{height:100%}
+#teslasico{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  header{
+    flex-shrink: 0;
+  }
+  main{
+    flex-grow: 1;
+    display: flex;
+    [class*="cont_"]{
+      flex-grow: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+// sidebar
+.sidebar{
+  flex-shrink: 0;
+  width: 260px;
+  border-right: 1px solid rgba(60, 60, 67, 0.12);
+  transition: width .2s;
+  nav{
+    padding: 24px 0;
+    .lnb_comm a{
+      display: block;
+      padding: 6px 24px 6px 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+
+// common
+.tit_comm {
+  font-weight: 600;
+  font-size: 30px;
+  & ~ & {
+    margin-top: 100px;
+  }
+  span {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #888;
+  }
+}
+
+// mission
+.cont_mission{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tit_mission{
+  position: relative;
+  padding-bottom: 40px;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  &:after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height:1px;
+    background-color: #9e9e9e;
+    transform: translateX(-50%);
+    content: '';
+  }
+}
+.desc_mission{
+  padding-top: 40px;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  .txt_en{
+    display: block;
+    font-size: 26px;
+  }
+  strong{
+    font-weight: 600;
+  }
+}
+
+
+
+
+
+
+@media
+only screen and (min-width:1450px){
+  .sidebar{
+    width: 320px;
+  }
+}

@@ -16,7 +16,10 @@ defineProps({
 
 <template>
   <div class="wrapper_bar">
-    <Bar :data="data" :options="options" />
+    <Bar
+      :data="data"
+      :options="options"
+    />
   </div>
 </template>
 
