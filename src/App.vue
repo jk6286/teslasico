@@ -5,8 +5,6 @@ import SideBar from '@/components/SideBar.vue';
 
 <template>
   <!-- <header></header> -->
-  <main>
-    <SideBar />
-    <RouterView />
-  </main>
+  <SideBar />
+  <RouterView />
 </template>

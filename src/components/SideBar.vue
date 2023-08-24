@@ -7,10 +7,14 @@ import { RouterLink } from 'vue-router';
     <nav>
       <ul class="lnb_comm">
         <li>
-          <RouterLink to="/"> Tesla Mission </RouterLink>
+          <RouterLink to="/">
+            Tesla Mission
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/car-sale"> Car Sale </RouterLink>
+          <RouterLink to="/car-sale">
+            Car Sale
+          </RouterLink>
         </li>
       </ul>
     </nav>

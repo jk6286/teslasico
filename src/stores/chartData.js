@@ -80,8 +80,6 @@ export const useChartDataStore = defineStore('chartData', () => {
     연도별_데이터.quarter = quarter === 4 ? 4 : quarter;
   }
 
-  console.log(연도별_생산배송_데이터);
-
   const 연도별_생산_데이터 = 연도별_생산배송_데이터.map(({ amount }) => amount.production);
   const 연도별_배송_데이터 = 연도별_생산배송_데이터.map(({ amount }) => amount.delivery);
   const 연도별_라벨들 = 연도별_생산배송_데이터.map(({ year, quarter }) =>

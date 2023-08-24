@@ -1,0 +1,46 @@
+@media
+only screen and (max-width:1200px){
+  // layout
+  main {
+    margin-left: 200px;
+  }
+  
+  // sidebar
+  .sidebar{
+    nav{
+      width: 200px;
+    }
+  }
+
+  // common
+  .tit_comm{
+    flex-direction: column;
+    align-items: flex-start;
+    span{
+      margin-left: 0;
+    }
+  }
+}
+
+// @media
+// only screen and (max-width:768px){
+//   .sidebar{
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     right:0;
+//     bottom:0;
+//     background-color: rgba(0,0,0,.6);
+//     width: 260px;
+//     background-color: transparent;
+//     nav{
+//       overflow-y: auto;
+//       width: 200px;
+//       height: 100%;
+//       padding: 24px 0;
+//       background-color: #fff;
+//       box-sizing: border-box;
+//     }
+//   }
+// }
+
