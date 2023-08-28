@@ -1,4 +1,3 @@
-import { ref } from 'vue';
 import { defineStore } from 'pinia';
 
 export const useChartDataStore = defineStore('chartData', () => {
@@ -40,23 +39,6 @@ export const useChartDataStore = defineStore('chartData', () => {
   const 분기별_생산_데이터 = 분기별_생산배송_데이터.map(({ amount }) => amount.production);
   const 분기별_배송_데이터 = 분기별_생산배송_데이터.map(({ amount }) => amount.delivery);
   const 분기별_라벨들 = 분기별_생산배송_데이터.map(({ year, quarter }) => `${year} - Q${quarter}`);
-  const 분기별_생산배송_차트데이터 = ref({
-    labels: 분기별_라벨들,
-    datasets: [
-      {
-        label: '분기별 생산량 (production)',
-        data: 분기별_생산_데이터,
-        backgroundColor: 'rgba(223,83,83,1)',
-        hoverBackgroundColor: 'rgba(223,83,83,0.6)'
-      },
-      {
-        label: '분기별 배송량 (delivery)',
-        data: 분기별_배송_데이터,
-        backgroundColor: 'rgba(20,151,238,1)',
-        hoverBackgroundColor: 'rgba(20,151,238,0.6)'
-      }
-    ]
-  });
 
   // 연도별 생산, 배송 데이터 배열 초기화
   const 연도별_생산배송_데이터 = [];
@@ -83,25 +65,15 @@ export const useChartDataStore = defineStore('chartData', () => {
   const 연도별_생산_데이터 = 연도별_생산배송_데이터.map(({ amount }) => amount.production);
   const 연도별_배송_데이터 = 연도별_생산배송_데이터.map(({ amount }) => amount.delivery);
   const 연도별_라벨들 = 연도별_생산배송_데이터.map(({ year, quarter }) =>
-    quarter === 4 ? `${year}년` : `${year}년 ~${quarter}분기`
+    quarter === 4 ? `${year}년` : `${year}년 ~ ${quarter}분기`
   );
-  const 연도별_생산배송_차트데이터 = ref({
-    labels: 연도별_라벨들,
-    datasets: [
-      {
-        label: '연도별 생산량 (production)',
-        data: 연도별_생산_데이터,
-        backgroundColor: 'rgba(223,83,83,1)',
-        hoverBackgroundColor: 'rgba(223,83,83,0.6)'
-      },
-      {
-        label: '연도별 배송량 (delivery)',
-        data: 연도별_배송_데이터,
-        backgroundColor: 'rgba(20,151,238,1)',
-        hoverBackgroundColor: 'rgba(20,151,238,0.6)'
-      }
-    ]
-  });
 
-  return { 분기별_생산배송_차트데이터, 연도별_생산배송_차트데이터 };
+  return {
+    분기별_생산_데이터,
+    분기별_배송_데이터,
+    분기별_라벨들,
+    연도별_생산_데이터,
+    연도별_배송_데이터,
+    연도별_라벨들
+  };
 });

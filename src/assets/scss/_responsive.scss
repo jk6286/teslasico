@@ -22,25 +22,58 @@ only screen and (max-width:1200px){
   }
 }
 
-// @media
-// only screen and (max-width:768px){
-//   .sidebar{
-//     position: absolute;
-//     top:0;
-//     left:0;
-//     right:0;
-//     bottom:0;
-//     background-color: rgba(0,0,0,.6);
-//     width: 260px;
-//     background-color: transparent;
-//     nav{
-//       overflow-y: auto;
-//       width: 200px;
-//       height: 100%;
-//       padding: 24px 0;
-//       background-color: #fff;
-//       box-sizing: border-box;
-//     }
-//   }
-// }
+@media
+only screen and (max-width:768px){
+  // layout
+  .wrap_chart{
+    padding-top: 120%;
+  }
+  .header{
+    .btn_sidebar{
+      display: block;
+      margin-right: 16px;
+    }
+  }
+  main{
+    margin-left: 0;
+  }
 
+  // sidebar
+  .sidebar{
+    right: 0;
+    pointer-events: none;
+    background: rgba($color-black, 0);
+    transition: background .3s;
+    nav{
+      position: absolute;
+      transform: translateX(-100%);
+      transition: transform .3s;
+    }
+    @at-root
+    .sidebar_open {
+      .sidebar{
+        pointer-events: auto;
+        background: rgba($color-black, 0.6);
+        
+        nav{
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  // mission
+  .tit_mission{
+    padding-bottom: 30px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .desc_mission {
+    padding-top: 30px;
+    font-size: 24px;
+    word-break: keep-all;
+    .txt_en{
+      font-size: 18px;
+    }
+  }
+}

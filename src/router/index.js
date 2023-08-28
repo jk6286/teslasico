@@ -13,11 +13,6 @@ const router = createRouter({
       path: '/car-sale',
       name: 'car-sale',
       component: () => import('@/pages/CarSalePage.vue')
-    },
-    {
-      path: '/sub',
-      name: 'sub',
-      component: () => import('@/pages/SubPage.vue')
     }
   ]
 });

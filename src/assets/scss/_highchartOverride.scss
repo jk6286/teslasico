@@ -1,0 +1,13 @@
+// highchart
+.wrap_chart {
+  position: relative;
+  margin-top: 30px;
+  padding-top: 56.25%;
+  & > div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
