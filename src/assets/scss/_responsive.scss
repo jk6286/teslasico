@@ -1,61 +1,68 @@
-@media
-only screen and (max-width:1200px){
+@media only screen and (max-width: 1200px) {
   // layout
   main {
     margin-left: 200px;
   }
-  
+
   // sidebar
-  .sidebar{
-    nav{
+  .sidebar {
+    nav {
       width: 200px;
     }
   }
 
   // common
-  .tit_comm{
+  .tit_comm {
     flex-direction: column;
     align-items: flex-start;
-    span{
+    span {
       margin-left: 0;
     }
   }
 }
 
-@media
-only screen and (max-width:768px){
+@media only screen and (max-width: 768px) {
   // layout
-  .wrap_chart{
+  .wrap_chart {
     padding-top: 120%;
   }
-  .header{
-    .btn_sidebar{
+  .header {
+    .btn_sidebar {
       display: block;
       margin-right: 16px;
     }
+    h1 {
+      a:hover {
+        color: inherit;
+      }
+    }
   }
-  main{
+  main {
     margin-left: 0;
   }
 
   // sidebar
-  .sidebar{
+  .sidebar {
     right: 0;
     pointer-events: none;
     background: rgba($color-black, 0);
-    transition: background .3s;
-    nav{
+    transition: background 0.3s;
+    nav {
       position: absolute;
       transform: translateX(-100%);
-      transition: transform .3s;
+      transition: transform 0.3s;
+      .lnb_comm {
+        a:hover {
+          color: inherit;
+        }
+      }
     }
-    @at-root
-    .sidebar_open {
-      .sidebar{
+    @at-root .sidebar_open {
+      .sidebar {
         pointer-events: auto;
         background: rgba($color-black, 0.6);
-        
-        nav{
+
+        nav {
           transform: translateX(0);
         }
       }
@@ -63,7 +70,7 @@ only screen and (max-width:768px){
   }
 
   // mission
-  .tit_mission{
+  .tit_mission {
     padding-bottom: 30px;
     font-size: 36px;
     line-height: 40px;
@@ -72,7 +79,7 @@ only screen and (max-width:768px){
     padding-top: 30px;
     font-size: 24px;
     word-break: keep-all;
-    .txt_en{
+    .txt_en {
       font-size: 18px;
     }
   }

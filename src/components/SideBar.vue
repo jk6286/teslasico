@@ -13,15 +13,18 @@ const sidebarLinks = [
 <template>
   <aside
     class="sidebar"
-    @click.self="sideBarToggle()">
+    @click.self="sideBarToggle()"
+  >
     <nav>
       <ul class="lnb_comm">
         <li
           v-for="link in sidebarLinks"
-          :key="link.to">
+          :key="link.to"
+        >
           <RouterLink
             :to="link.to"
-            @click="sideBarStore.isSideBarOpen = false">
+            @click="sideBarStore.isSideBarOpen = false"
+          >
             {{ link.text }}
           </RouterLink>
         </li>

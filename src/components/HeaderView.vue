@@ -9,16 +9,15 @@ const { sideBarToggle } = useSideBarStore();
     <button
       type="button"
       class="btn_sidebar"
-      @click="sideBarToggle()">
+      @click="sideBarToggle()"
+    >
       <div class="ico_menu"></div>
       <div class="ico_menu"></div>
       <div class="ico_menu"></div>
       <strong class="screen_out">메뉴 열기 / 닫기</strong>
     </button>
     <h1>
-      <RouterLink to="/">
-        Teslasico
-      </RouterLink>
+      <RouterLink to="/"> Teslasico </RouterLink>
     </h1>
   </header>
 </template>

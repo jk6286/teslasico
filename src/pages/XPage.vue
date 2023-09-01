@@ -4,8 +4,6 @@ import 'https://platform.twitter.com/widgets.js';
 
 <template>
   <main class="cont_x">
-    <div class="inner_cont">
-      x
-    </div>
+    <div class="inner_cont">x</div>
   </main>
 </template>
