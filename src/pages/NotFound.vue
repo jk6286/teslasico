@@ -8,7 +8,7 @@ let currentPathname = ref('');
 
 onMounted(() => {
   currentDomain.value = window.location.origin;
-  currentPathname.value = window.location.pathname;
+  currentPathname.value = decodeURIComponent(window.location.pathname);
 });
 </script>
 <template>
