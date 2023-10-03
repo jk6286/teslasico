@@ -7,6 +7,7 @@ const sideBarToggle = sideBarStore.sideBarToggle;
 const sidebarLinks = [
   { to: '/', text: 'Tesla Mission' },
   { to: '/car-sale', text: 'Car Sale' }
+  // { to: '/x', text: 'x' },
 ];
 </script>
 

@@ -323,6 +323,38 @@ main {
   }
 }
 
+// Not Found
+.cont_not_found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  .inner_cont {
+    align-items: center;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #767676;
+    strong {
+      color: $color-red;
+    }
+  }
+  .btn_back {
+    margin-top: 20px;
+    padding: 10px 14px 8px;
+    background-color: $color-blue;
+    font-size: 14px;
+    color: $color-white;
+    border-radius: 4px;
+  }
+}
+
 // mission
 .cont_mission {
   display: flex;

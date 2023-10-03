@@ -1,7 +1,6 @@
 <script setup>
 import { 분기_및_연도별_생산배송_차트_옵션 } from '@/js/highchart/options/carSaleDataOptions.js';
-
-const chartOptinos = (type) => 분기_및_연도별_생산배송_차트_옵션(type);
+const chartOptions = (type) => 분기_및_연도별_생산배송_차트_옵션(type);
 </script>
 
 <template>
@@ -13,7 +12,7 @@ const chartOptinos = (type) => 분기_및_연도별_생산배송_차트_옵션(t
       <div class="wrap_chart">
         <highcharts
           ref="분기별차트"
-          :options="chartOptinos('분기')"
+          :options="chartOptions('분기')"
         />
       </div>
       <h2 class="tit_comm">
@@ -22,10 +21,9 @@ const chartOptinos = (type) => 분기_및_연도별_생산배송_차트_옵션(t
       <div class="wrap_chart">
         <highcharts
           ref="연도별차트"
-          :options="chartOptinos('연도')"
+          :options="chartOptions('연도')"
         />
       </div>
     </div>
   </main>
 </template>
-@/js/highchart/options/carSaleDataOptions.js

@@ -5,7 +5,6 @@ import HeaderView from '@/components/HeaderView.vue';
 import SideBar from '@/components/SideBar.vue';
 import { useSideBarStore } from '@/stores/sideBar.js';
 const { isSideBarOpen } = storeToRefs(useSideBarStore());
-// import 'https://platform.twitter.com/widgets.js';
 </script>
 
 <template>
