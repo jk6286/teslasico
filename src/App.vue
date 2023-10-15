@@ -9,6 +9,7 @@ const { isSideBarOpen } = storeToRefs(useSideBarStore());
 
 <template>
   <div
+    class="test"
     id="teslasico"
     :class="isSideBarOpen ? 'sidebar_open' : ''"
   >
