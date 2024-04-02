@@ -2,10 +2,10 @@ import { defineStore } from 'pinia';
 
 export const useChartDataStore = defineStore('chartData', () => {
   const 분기별_생산배송_데이터 = [
-    { year: 2017, quarter: 1, amount: { production: 25418, delivery: 25051 } },
-    { year: 2017, quarter: 2, amount: { production: 25708, delivery: 22026 } },
-    { year: 2017, quarter: 3, amount: { production: 25336, delivery: 26137 } },
-    { year: 2017, quarter: 4, amount: { production: 24565, delivery: 29967 } },
+    //{ year: 2017, quarter: 1, amount: { production: 25418, delivery: 25051 } },
+    //{ year: 2017, quarter: 2, amount: { production: 25708, delivery: 22026 } },
+    //{ year: 2017, quarter: 3, amount: { production: 25336, delivery: 26137 } },
+    //{ year: 2017, quarter: 4, amount: { production: 24565, delivery: 29967 } },
 
     { year: 2018, quarter: 1, amount: { production: 34494, delivery: 29997 } },
     { year: 2018, quarter: 2, amount: { production: 40740, delivery: 40768 } },
