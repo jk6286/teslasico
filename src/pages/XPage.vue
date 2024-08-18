@@ -5,7 +5,7 @@ import 'https://platform.twitter.com/widgets.js';
 <template>
   <main class="cont_x">
     <div class="inner_cont">
-      x &amp; tesla
+      x &amp; tesla &amp; xAi
     </div>
   </main>
 </template>
