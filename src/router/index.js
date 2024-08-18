@@ -29,6 +29,12 @@ const router = createRouter({
       name: 'x',
       component: () => import('@/pages/XPage.vue'),
       meta: { title: 'title x' }
+    },
+    {
+      path: '/vod',
+      name: 'vod',
+      component: () => import('@/pages/VodPage.vue'),
+      meta: { title: 'title Vod' }
     }
   ]
   // scrollBehavior() {
