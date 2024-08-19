@@ -34,7 +34,6 @@ const router = createRouter({
       path: '/vod',
       name: 'vod',
       component: () => import('@/pages/VodPage.vue'),
-      meta: { title: 'title Vod' }
     }
   ]
   // scrollBehavior() {
