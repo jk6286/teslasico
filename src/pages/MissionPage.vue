@@ -1,5 +1,5 @@
 <template>
-  <main class="cont_mission test">
+  <main class="cont_mission">
     <div class="inner_cont">
       <h2 class="tit_mission">Tesla Mission</h2>
       <p class="desc_mission">
