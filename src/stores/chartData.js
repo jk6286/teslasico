@@ -43,6 +43,8 @@ export const useChartDataStore = defineStore('chartData', () => {
     { year: 2024, quarter: 4, amount: { production: 459445, delivery: 495570 } },
     
     { year: 2025, quarter: 1, amount: { production: 362615, delivery: 336681 } },
+    { year: 2025, quarter: 2, amount: { production: 410244, delivery: 384122 } },
+    { year: 2025, quarter: 3, amount: { production: 447450, delivery: 497099 } },
   ];
 
   const 분기별_생산_데이터 = 분기별_생산배송_데이터.map(({ amount }) => amount.production);
