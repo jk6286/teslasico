@@ -12,10 +12,10 @@ export const useChartDataStore = defineStore('chartData', () => {
     // { year: 2018, quarter: 3, amount: { production: 80142, delivery: 83775 } },
     // { year: 2018, quarter: 4, amount: { production: 88944, delivery: 90966 } },
 
-    { year: 2019, quarter: 1, amount: { production: 63019, delivery: 77138 } },
-    { year: 2019, quarter: 2, amount: { production: 95356, delivery: 87048 } },
-    { year: 2019, quarter: 3, amount: { production: 97186, delivery: 96155 } },
-    { year: 2019, quarter: 4, amount: { production: 112095, delivery: 104891 } },
+    // { year: 2019, quarter: 1, amount: { production: 63019, delivery: 77138 } },
+    // { year: 2019, quarter: 2, amount: { production: 95356, delivery: 87048 } },
+    // { year: 2019, quarter: 3, amount: { production: 97186, delivery: 96155 } },
+    // { year: 2019, quarter: 4, amount: { production: 112095, delivery: 104891 } },
 
     { year: 2020, quarter: 1, amount: { production: 88496, delivery: 102672 } },
     { year: 2020, quarter: 2, amount: { production: 90891, delivery: 82272 } },
